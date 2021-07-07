@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.percentlayout.widget.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#C3BEBE"
+    tools:context=".PieFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_widthPercent="80%"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/pc_chart"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical">
+    <View
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:background="@drawable/triangle"
+        android:layout_gravity="center_horizontal"/>
+
+
+    <TextView
+        android:id="@+id/tv_des"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:background="@drawable/bg_des"
+        android:text="imooc" />
+
+    </LinearLayout>
+
+    <com.example.imoocpiechart.PieChart
+        android:id="@+id/pc_chart"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_widthPercent="80%"
+        android:layout_centerInParent="true"/>
+
+
+
+
+</androidx.percentlayout.widget.PercentRelativeLayout>
